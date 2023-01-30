@@ -1,0 +1,34 @@
+{
+  "name": "spr-backend-node",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "start": "npx lerna run start",
+    "build": "npx lerna run build --concurrency=10 --stream",
+    "watch": "npx lerna run watch",
+    "clean": "npx lerna clean -y",
+    "hoist": "npx lerna bootstrap --hoist",
+    "setup": "npm install && npm run hoist && npm run build",
+    "resetup": "npm run clean && npm install && npm run hoist && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^31.0.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
+    "lerna": "^6.4.1",
+    "prettier": "^2.8.3",
+    "standard-version": "^9.5.0",
+    "typescript": "^4.9.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
