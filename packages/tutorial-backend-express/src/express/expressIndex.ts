@@ -9,9 +9,8 @@ import router from "./apiRouter"
 const Api = express()
 const PORT = 5001 || 8080
 
-// conversion & middlewares
+// conversion
 Api.use(express.urlencoded({ extended: false, limit: "32mb" }))
-// express.json is used to get req data
 Api.use(express.json({ limit: "32mb" }))
 Api.use(cors())
 

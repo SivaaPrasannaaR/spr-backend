@@ -3,8 +3,8 @@ import cookieParser from "cookie-parser"
 import session from "express-session"
 import cors from "cors"
 
-import { verify } from "./verify"
-import router from "./apiRouter"
+import { verify } from "./express/verify"
+import router from "./express/apiRouter"
 
 const Api = express()
 const PORT = 5001 || 8080
